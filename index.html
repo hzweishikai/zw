@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+			.gd {
+				width: 4px;
+				height: 4px;
+				background-color:white;
+
+				border-radius: 50%;
+				position:absolute;
+				top:0;
+				right:0;
+				box-shadow: 0 0 10px 10px #f2ffb7;
+			}
+			
+			
+			#gd{
+				transition: 8.5s all ease-in-out;
+				
+			}
+			#gd2{
+				transition: 12.8s all ease-in-out;
+				
+			}
+			#gd3{
+				transition: 11s all ease-in-out;
+			}
+			#gd4{
+				transition: 6.5s all ease-in-out;
+				
+			}
+			#gd5{
+				transition: 8.5s all ease-in-out;
+				
+			}
+			#gd6{
+				transition: 7.5s all ease-in-out;
+				
+			}
+			#gd7{
+				transition: 6s all ease-in-out;
+				
+			}
+			#gd8{
+				transition: 8s all ease-in-out;
+				
+			}
+			#gd9{
+				transition: 6s all ease-in-out;
+				
+			}
+			#gda{
+				transition: 13s all ease-in-out;
+				
+			}
+			#gdb{
+				transition: 12s all ease-in-out;
+				
+			}
+			#gdc{
+				transition: 11s all ease-in-out;
+				
+			}
+			#gdd{
+				transition: 8s all ease-in-out;
+				
+			}
+			#gde{
+				transition: 6s all ease-in-out;
+				
+			}
+			#gdf{
+				transition: 5.5s all ease-in-out;
+				
+			}
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<img src="images/7eba8fdae71f9d4d0ebda47ac76617c7.jpg"/>
+		<div id="gd" class="gd">
+			<!--光点-->
+		</div>
+		<div id="gd2" class="gd">
+			<!--光点-->
+		</div>
+		<div id="gd3" class="gd">
+			<!--光点-->
+		</div>
+		<div id="gd4" class="gd">
+			<!--光点-->
+		</div>
+		<div id="gd5" class="gd">
+			<!--光点-->
+		</div>
+		<div id="gd6" class="gd">
+			<!--光点-->
+		</div>
+		<div id="gd7" class="gd">
+			<!--光点-->
+		</div>
+		<div id="gd8" class="gd">
+			<!--光点-->
+		</div>
+		<div id="gd9" class="gd">
+			<!--光点-->
+		</div>
+		<div id="gda" class="gd">
+			<!--光点-->
+		</div>
+		<div id="gdb" class="gd">
+			<!--光点-->
+		</div>
+		<div id="gdc" class="gd">
+			<!--光点-->
+		</div>
+		<div id="gdd" class="gd">
+			<!--光点-->
+		</div>
+		<div id="gde" class="gd">
+			<!--光点-->
+		</div>
+		<div id="gdf" class="gd">
+			<!--光点-->
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		var gd = document.getElementById("gd")
+		var gd2 = document.getElementById("gd2")
+		var gd3= document.getElementById("gd3")
+		var gd4 = document.getElementById("gd4")
+		var gd5 = document.getElementById("gd5")
+		var gd6 = document.getElementById("gd6")
+		var gd7 = document.getElementById("gd7")
+		var gd8 = document.getElementById("gd8")
+		var gd9 = document.getElementById("gd9")
+		var gda = document.getElementById("gda")
+		var gdb = document.getElementById("gdb")
+		var gdc = document.getElementById("gdc")
+		var gdd = document.getElementById("gdd")
+		var gde = document.getElementById("gde")
+		var gdf = document.getElementById("gdf")
+
+		function wz() { //位置
+			var x;
+			var y;
+			var sd;		//阴影填充
+			var left = gd.offsetLeft;
+			var top = gd.offsetTop;
+			var w=innerWidth;
+			var h=innerHeight;
+			sd= (Math.random() * 11)
+			x = (Math.random() * w) - w/2;
+			y = (Math.random() * h) - h/2;
+			var left1 = left + x;
+			var top1 = top + y;
+			if(w<left1) {
+				left1 =2*w-left1
+			};
+			if(h<top1){
+				top1 =2*h-top1
+						};
+			if(left1<=0){
+				left1=left1+w/2
+						};
+			if(top1<=0){
+				top1=top1+h/2
+						};
+			gd.style.left=left1+"px";
+			gd.style.top=top1+"px";
+			gd.style.boxShadow='0 0 10px '+sd+'px #f2ffb7'
+			
+		}
+
+		setInterval('wz()', 9000);
+		
+		function wz2() { //位置
+			var x2;
+			var y2;
+			var left = gd.offsetLeft;
+			var top = gd.offsetTop;
+			var w2=innerWidth;
+			var h2=innerHeight;
+			var sd;		//阴影填充
+			sd= (Math.random() * 11)
+			x2= (Math.random() * w2) - w2/2;
+			y2 = (Math.random() * h2) - h2/2;
+			var left2 = left + x2;
+			var top2 = top + y2;
+			if(w2<left2) {
+				left2 =2*w2-left1
+			};
+			if(h2<top2){
+				top2 =2*h2-top1
+						};
+			if(left2<=0){
+				left2=left2+w2/2
+						};
+			if(top2<=0){
+				top2=top2+h2/2
+						};
+			gd2.style.left=left2+"px";
+			gd2.style.top=top2+"px";
+			gd2.style.boxShadow='0 0 10px '+sd+'px #f2ffb7'
+			
+		}
+
+		setInterval('wz2()', 13000);
+		
+		function wz3() { //位置
+			var x;
+			var y;
+			var sd;		//阴影填充
+			var left = gd.offsetLeft;
+			var top = gd.offsetTop;
+			var w=innerWidth;
+			var h=innerHeight;
+			sd= (Math.random() * 11)
+			x = (Math.random() * w) - w/2;
+			y = (Math.random() * h) - h/2;
+			var left1 = left + x;
+			var top1 = top + y;
+			if(w<left1) {
+				left1 =2*w-left1
+			};
+			if(h<top1){
+				top1 =2*h-top1
+						};
+			if(left1<=0){
+				left1=left1+w/2
+						};
+			if(top1<=0){
+				top1=top1+h/2
+						};
+			gd3.style.left=left1+"px";
+			gd3.style.top=top1+"px";
+			gd3.style.boxShadow='0 0 10px '+sd+'px #f2ffb7'
+		}
+
+		setInterval('wz3()', 11230);
+		
+		function wz4() { //位置
+			var x;
+			var y;
+			var sd;		//阴影填充
+			var left = gd.offsetLeft;
+			var top = gd.offsetTop;
+			var w=innerWidth;
+			var h=innerHeight;
+			sd= (Math.random() * 11)
+			x = (Math.random() * w) - w/2;
+			y = (Math.random() * h) - h/2;
+			var left1 = left + x;
+			var top1 = top + y;
+			if(w<left1) {
+				left1 =2*w-left1
+			};
+			if(h<top1){
+				top1 =2*h-top1
+						};
+			if(left1<=0){
+				left1=left1+w/2
+						};
+			if(top1<=0){
+				top1=top1+h/2
+						};
+			gd4.style.left=left1+"px";
+			gd4.style.top=top1+"px";
+			gd4.style.boxShadow='0 0 10px '+sd+'px #f2ffb7'
+			
+		}
+
+		setInterval('wz4()', 6874);
+		
+		function wz5() { //位置
+			var x;
+			var y;
+			var sd;		//阴影填充
+			var left = gd.offsetLeft;
+			var top = gd.offsetTop;
+			var w=innerWidth;
+			var h=innerHeight;
+			sd= (Math.random() * 11)
+			x = (Math.random() * w) - w/2;
+			y = (Math.random() * h) - h/2;
+			var left1 = left + x;
+			var top1 = top + y;
+			if(w<left1) {
+				left1 =2*w-left1
+			};
+			if(h<top1){
+				top1 =2*h-top1
+						};
+			if(left1<=0){
+				left1=left1+w/2
+						};
+			if(top1<=0){
+				top1=top1+h/2
+						};
+			gd5.style.left=left1+"px";
+			gd5.style.top=top1+"px";
+			gd5.style.boxShadow='0 0 10px '+sd+'px #f2ffb7'
+			
+		}
+
+		setInterval('wz5()', 8753);
+		
+		function wz6() { //位置
+			var x;
+			var y;
+			var sd;		//阴影填充
+			var left = gd.offsetLeft;
+			var top = gd.offsetTop;
+			var w=innerWidth;
+			var h=innerHeight;
+			sd= (Math.random() * 11)
+			x = (Math.random() * w) - w/2;
+			y = (Math.random() * h) - h/2;
+			var left1 = left + x;
+			var top1 = top + y;
+			if(w<left1) {
+				left1 =2*w-left1
+			};
+			if(h<top1){
+				top1 =2*h-top1
+						};
+			if(left1<=0){
+				left1=left1+w/2
+						};
+			if(top1<=0){
+				top1=top1+h/2
+						};
+			gd6.style.left=left1+"px";
+			gd6.style.top=top1+"px";
+			gd6.style.boxShadow='0 0 10px '+sd+'px #f2ffb7'
+			
+		}
+
+		setInterval('wz6()', 7855);
+		
+		function wz7() { //位置
+			var x;
+			var y;
+			var sd;		//阴影填充
+			var left = gd.offsetLeft;
+			var top = gd.offsetTop;
+			var w=innerWidth;
+			var h=innerHeight;
+			sd= (Math.random() * 11)
+			x = (Math.random() * w) - w/2;
+			y = (Math.random() * h) - h/2;
+			var left1 = left + x;
+			var top1 = top + y;
+			if(w<left1) {
+				left1 =2*w-left1
+			};
+			if(h<top1){
+				top1 =2*h-top1
+						};
+			if(left1<=0){
+				left1=left1+w/2
+						};
+			if(top1<=0){
+				top1=top1+h/2
+						};
+			gd7.style.left=left1+"px";
+			gd7.style.top=top1+"px";
+			gd7.style.boxShadow='0 0 10px '+sd+'px #f2ffb7'
+			
+		}
+
+		setInterval('wz7()', 6447);
+		
+		function wz8() { //位置
+			var x;
+			var y;
+			var sd;		//阴影填充
+			var left = gd.offsetLeft;
+			var top = gd.offsetTop;
+			var w=innerWidth;
+			var h=innerHeight;
+			sd= (Math.random() * 11)
+			x = (Math.random() * w) - w/2;
+			y = (Math.random() * h) - h/2;
+			var left1 = left + x;
+			var top1 = top + y;
+			if(w<left1) {
+				left1 =2*w-left1
+			};
+			if(h<top1){
+				top1 =2*h-top1
+						};
+			if(left1<=0){
+				left1=left1+w/2
+						};
+			if(top1<=0){
+				top1=top1+h/2
+						};
+			gd8.style.left=left1+"px";
+			gd8.style.top=top1+"px";
+			gd8.style.boxShadow='0 0 10px '+sd+'px #f2ffb7'
+			
+		}
+
+		setInterval('wz8()', 8212);
+		
+		function wz9() { //位置
+			var x;
+			var y;
+			var sd;		//阴影填充
+			var left = gd.offsetLeft;
+			var top = gd.offsetTop;
+			var w=innerWidth;
+			var h=innerHeight;
+			sd= (Math.random() * 11)
+			x = (Math.random() * w) - w/2;
+			y = (Math.random() * h) - h/2;
+			var left1 = left + x;
+			var top1 = top + y;
+			if(w<left1) {
+				left1 =2*w-left1
+			};
+			if(h<top1){
+				top1 =2*h-top1
+						};
+			if(left1<=0){
+				left1=left1+w/2
+						};
+			if(top1<=0){
+				top1=top1+h/2
+						};
+			gd9.style.left=left1+"px";
+			gd9.style.top=top1+"px";
+			gd9.style.boxShadow='0 0 10px '+sd+'px #f2ffb7'
+			
+		}
+
+		setInterval('wz9()', 6254);
+		
+		function wza() { //位置
+			var x;
+			var y;
+			var sd;		//阴影填充
+			var left = gd.offsetLeft;
+			var top = gd.offsetTop;
+			var w=innerWidth;
+			var h=innerHeight;
+			sd= (Math.random() * 11)
+			x = (Math.random() * w) - w/2;
+			y = (Math.random() * h) - h/2;
+			var left1 = left + x;
+			var top1 = top + y;
+			if(w<left1) {
+				left1 =2*w-left1
+			};
+			if(h<top1){
+				top1 =2*h-top1
+						};
+			if(left1<=0){
+				left1=left1+w/2
+						};
+			if(top1<=0){
+				top1=top1+h/2
+						};
+			gda.style.left=left1+"px";
+			gda.style.top=top1+"px";
+			gda.style.boxShadow='0 0 10px '+sd+'px #f2ffb7'
+			
+		}
+
+		setInterval('wza()', 13256);
+		
+		function wzb() { //位置
+			var x;
+			var y;
+			var sd;		//阴影填充
+			var left = gd.offsetLeft;
+			var top = gd.offsetTop;
+			var w=innerWidth;
+			var h=innerHeight;
+			sd= (Math.random() * 11)
+			x = (Math.random() * w) - w/2;
+			y = (Math.random() * h) - h/2;
+			var left1 = left + x;
+			var top1 = top + y;
+			if(w<left1) {
+				left1 =2*w-left1
+			};
+			if(h<top1){
+				top1 =2*h-top1
+						};
+			if(left1<=0){
+				left1=left1+w/2
+						};
+			if(top1<=0){
+				top1=top1+h/2
+						};
+			gdb.style.left=left1+"px";
+			gdb.style.top=top1+"px";
+			gdb.style.boxShadow='0 0 10px '+sd+'px #f2ffb7'
+			
+		}
+
+		setInterval('wzb()', 12562);
+		
+		function wzc() { //位置
+			var x;
+			var y;
+			var sd;		//阴影填充
+			var left = gd.offsetLeft;
+			var top = gd.offsetTop;
+			var w=innerWidth;
+			var h=innerHeight;
+			sd= (Math.random() * 11)
+			x = (Math.random() * w) - w/2;
+			y = (Math.random() * h) - h/2;
+			var left1 = left + x;
+			var top1 = top + y;
+			if(w<left1) {
+				left1 =2*w-left1
+			};
+			if(h<top1){
+				top1 =2*h-top1
+						};
+			if(left1<=0){
+				left1=left1+w/2
+						};
+			if(top1<=0){
+				top1=top1+h/2
+						};
+			gdc.style.left=left1+"px";
+			gdc.style.top=top1+"px";
+			gdc.style.boxShadow='0 0 10px '+sd+'px #f2ffb7'
+			
+		}
+
+		setInterval('wzc()', 11515);
+		
+		function wzd() { //位置
+			var x;
+			var y;
+			var sd;		//阴影填充
+			var left = gd.offsetLeft;
+			var top = gd.offsetTop;
+			var w=innerWidth;
+			var h=innerHeight;
+			sd= (Math.random() * 11)
+			x = (Math.random() * w) - w/2;
+			y = (Math.random() * h) - h/2;
+			var left1 = left + x;
+			var top1 = top + y;
+			if(w<left1) {
+				left1 =2*w-left1
+			};
+			if(h<top1){
+				top1 =2*h-top1
+						};
+			if(left1<=0){
+				left1=left1+w/2
+						};
+			if(top1<=0){
+				top1=top1+h/2
+						};
+			gdd.style.left=left1+"px";
+			gdd.style.top=top1+"px";
+			gdd.style.boxShadow='0 0 10px '+sd+'px #f2ffb7'
+			
+		}
+
+		setInterval('wzd()', 8365);
+		
+		function wze() { //位置
+			var x;
+			var y;
+			var sd;		//阴影填充
+			var left = gd.offsetLeft;
+			var top = gd.offsetTop;
+			var w=innerWidth;
+			var h=innerHeight;
+			sd= (Math.random() * 11)
+			x = (Math.random() * w) - w/2;
+			y = (Math.random() * h) - h/2;
+			var left1 = left + x;
+			var top1 = top + y;
+			if(w<left1) {
+				left1 =2*w-left1
+			};
+			if(h<top1){
+				top1 =2*h-top1
+						};
+			if(left1<=0){
+				left1=left1+w/2
+						};
+			if(top1<=0){
+				top1=top1+h/2
+						};
+			gde.style.left=left1+"px";
+			gde.style.top=top1+"px";
+			gde.style.boxShadow='0 0 10px '+sd+'px #f2ffb7'
+			
+		}
+
+		setInterval('wze()', 6562);
+		
+		function wzf() { //位置
+			var x;
+			var y;
+			var sd;		//阴影填充
+			var left = gd.offsetLeft;
+			var top = gd.offsetTop;
+			var w=innerWidth;
+			var h=innerHeight;
+			sd= (Math.random() * 11)
+			x = (Math.random() * w) - w/2;
+			y = (Math.random() * h) - h/2;
+			var left1 = left + x;
+			var top1 = top + y;
+			if(w<left1) {
+				left1 =2*w-left1
+			};
+			if(h<top1){
+				top1 =2*h-top1
+						};
+			if(left1<=0){
+				left1=left1+w/2
+						};
+			if(top1<=0){
+				top1=top1+h/2
+						};
+			gdf.style.left=left1+"px";
+			gdf.style.top=top1+"px";
+			gdf.style.boxShadow='0 0 10px '+sd+'px #f2ffb7'
+			
+		};
+
+		setInterval('wzf()', 5646);
+	</script>
+
+</html>
